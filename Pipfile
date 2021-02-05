@@ -8,6 +8,7 @@ django = "*"
 python-decouple = "*"
 dj-database-url = "*"
 django-debug-toolbar = "*"
+django-project-version = "*"
 
 [dev-packages]
 autopep8 = "*"
