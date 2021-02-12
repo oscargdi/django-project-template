@@ -20,6 +20,16 @@ DEBUG=True
 SECRET_KEY=
 
 ADMINS=Your name, your email
+
+DATABASE_URL=
+
+ALLOWED_HOSTS=
+
+INTERNAL_IPS=
+
+SESSION_COOKIE_AGE=
+
+LOGGING_LEVEL=DEBUG
 ```
 
 Complete `SECRET_KEY` by activating python and running:
