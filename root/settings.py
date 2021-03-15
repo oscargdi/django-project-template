@@ -44,7 +44,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 APP_NAME = config('APP_NAME')
 
-DJVERSION_VERSION = '0.0.1'
+APP_VERSION = '0.0.1'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -89,8 +89,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'djversion',
     'debug_toolbar',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
