@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    environment:
+      - DJANGO_SUPERUSER_USERNAME=admin
+      - DJANGO_SUPERUSER_EMAIL=admin@admin.com
+      - DJANGO_SUPERUSER_PASSWORD=admin
+    env_file:
+      - .env.local
+    volumes:
+      - .:/src
+    ports:
+      - 8000:8000
+    entrypoint: ./entrypoint.dev.sh
+    command: pipenv run ./main.py
