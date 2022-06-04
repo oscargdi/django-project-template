@@ -8,6 +8,7 @@ django = "*"
 python-decouple = "*"
 dj-database-url = "*"
 django-extensions = "*"
+django-debug-toolbar = "*"
 
 [dev-packages]
 pylint = "*"
