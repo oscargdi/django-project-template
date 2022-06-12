@@ -7,7 +7,7 @@ RUN pip install --upgrade pip pipenv
 
 WORKDIR /src
 
-COPY Pipfile* .
+COPY Pipfile* ./
 
 RUN pipenv install --ignore-pipfile --deploy
 
