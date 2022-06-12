@@ -12,3 +12,10 @@ run-app: stop-app ## Run the application within a container
 .PHONY: stop-app
 stop-app: ## Stop app
 	$(COMPOSE) -f $(COMPOSE_FILE) down -v --remove-orphans
+
+.PHONY: ci
+ci: ## Run CI
+	$(COMPOSE) -f $(COMPOSE_FILE) down -v --remove-orphans
+	$(COMPOSE) -f $(COMPOSE_FILE) build app
+	$(COMPOSE) -f $(COMPOSE_FILE) run app ./utils/ci.sh
+	$(COMPOSE) -f $(COMPOSE_FILE) down -v --remove-orphans
