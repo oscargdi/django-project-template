@@ -129,3 +129,11 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Debug toolbar settings
 DEBUG_TOOLBAR_CONFIG = {"SHOW_TOOLBAR_CALLBACK": lambda x: DEBUG}
+
+# Django extensions configuration
+VALIDATE_TEMPLATES_IGNORE_APPS = [
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django_extensions",
+    "debug_toolbar",
+]
