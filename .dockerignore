@@ -1,0 +1,11 @@
+.devcontainer
+.dockerignore
+.env*
+.git
+.github
+.gitignore
+Dockerfile
+Makefile
+db.sqlite3
+docker-compose.yml
+readme.md
