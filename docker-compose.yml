@@ -13,5 +13,5 @@ services:
       - .:/src
     ports:
       - 8000:8000
-    entrypoint: ./entrypoint.dev.sh
+    entrypoint: ./utils/entrypoint.dev.sh
     command: pipenv run ./manage.py runserver 0:8000
