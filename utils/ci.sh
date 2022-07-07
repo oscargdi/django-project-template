@@ -2,6 +2,14 @@
 
 set -e
 
+pipenv install --dev
+
+# Checks unused variables and unused imports
+pipenv run autoflake . -r -c --remove-unused-variables --remove-all-unused-imports --ignore-init-module-imports
+# Checks imports sorting
+pipenv run isort . -c --profile black
+# Checks formatting
+pipenv run black . --check
 # Checks templates on syntax or compile errors.
 pipenv run ./manage.py validate_templates -v 2
 # Checks migrations if missing or not up-to-date

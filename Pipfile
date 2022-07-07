@@ -13,6 +13,8 @@ django-debug-toolbar = "*"
 [dev-packages]
 pylint = "*"
 black = "*"
+pre-commit = "*"
+autoflake = "*"
 
 [requires]
 python_version = "3.10"
