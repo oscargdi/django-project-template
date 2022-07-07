@@ -2,6 +2,8 @@
 
 set -e
 
+pipenv install --dev
+
 # Checks unused variables and unused imports
 pipenv run autoflake . -r -c --remove-unused-variables --remove-all-unused-imports --ignore-init-module-imports
 # Checks imports sorting
